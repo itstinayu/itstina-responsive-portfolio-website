@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tina's Responsive portfolio website</title>
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon_package/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <img
+          src="./assets/img/favicon_package/favicon.ico"
+          alt="Tina logo"
+          class="nav__logo-img"
+        />
+        <a href="#" class="nav__logo"> Tina portfolio </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="ri-home-5-line"></i>Home
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="ri-briefcase-line"></i>about
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="ri-trophy-line"></i>Skills
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link">
+                <i class="ri-book-open-line"></i>Qualification
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">
+                <i class="ri-image-line"></i>Projects
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="ri-chat-3-line"></i>Contact
+              </a>
+            </li>
+          </ul>
+          <!-- close btn -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__buttons">
+          <!-- theme change btn-->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+          <!-- toggle btn -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-4-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid section__border">
+          <div class="home__data grid">
+            <h1 class="home__title">
+              Hi, I'm Tina <br />
+              Frontend Developer <br />
+              Based In Taipei <br />
+            </h1>
+
+            <div class="home__blob grid">
+              <div class="home__profile"></div>
+              <img
+                src="./assets/img/shape-wawes.svg"
+                alt=""
+                class="home__shape-waves"
+              />
+              <img
+                src="./assets/img/shape-circle.svg"
+                alt=""
+                class="home__shape-circle"
+              />
+            </div>
+
+            <ul class="home__social">
+              <a
+                href="https://www.cakeresume.com/me/tina77878"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-copyright-line"></i>
+              </a>
+              <a
+                href="https://github.com/itstinayu"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-github-line"></i>
+              </a>
+            </ul>
+          </div>
+
+          <!--==================== HOME INFO 1 ====================-->
+          <div class="home__info">
+            <div>
+              <h3 class="home__info-title">自我介紹</h3>
+              <p class="home__info-description">
+                您好, 我是玟馨, 從多媒體設計跨入網頁開發領域，請多多指教。
+              </p>
+            </div>
+
+            <div>
+              <h3 class="home__info-title">聯絡我</h3>
+              <p class="home__info-description">
+                trista10235195@gmail.com <br />
+                0903100092 <br />
+              </p>
+            </div>
+
+            <div>
+              <h3 class="home__info-title">關於我</h3>
+              <p class="home__info-description">
+                動態網頁設計 <br />
+                前端網頁開發<br />
+              </p>
+            </div>
+          </div>
+
+          <!--==================== HOME INFO 2 ====================-->
+          <div class="home__info">
+            <div>
+              <h3 class="home__info-title">經驗</h3>
+              <p class="home__info-number">06+</p>
+            </div>
+
+            <div>
+              <h3 class="home__info-title">作品</h3>
+              <p class="home__info-number">09+</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== about ====================-->
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">從多媒體設計領域跨入程式世界</span>
+        <div class="about__container container grid section__border">
+          <!--==================== about 1 ====================-->
+          <div class="about__card">
+            <div class="about__border"></div>
+          </div>
+
+          <div class="about__card">
+            <i class="ri-code-line"></i>
+            <h2 class="about__title">我是游玟馨，從熱情成為實踐者。</h2>
+            <div class="about__description">
+              為什麼要踏進程式世界？大學畢業後進入企業，發現原有的公司網站已不具有現今網站的需求，在職時和網頁設計公司討論新網站的建置，發現相較於靜態的網頁資訊，動態的網頁更能給使用者互動的感覺。
+              <br />
+              <br />
+              在進入網頁開發領域後，開始上網購買課程，下班後線上學習，對於網頁設計越發有興趣，辭職後進入職訓參訓半年，從零開始，從學會程式語言基本語法到響應式網頁切版再到學習框架，結訓前能夠建立完整的前後端整合網站。
+              <br />
+              <br />
+              我喜歡解決問題後的成就感，從多媒體設計領域進入網頁設計，接著網頁程式開發。學習過程中，會有許多從沒遇過的問題需要被解決，解決問題時，學會使用網路及社群的力量、詢問職訓的老師，在Debug的過程裡錯中學習。目前對於網頁UI/UX，到資料庫的串接，前後端相互配合，都有了的經驗。
+              <br />
+              <br />
+              涉獵到程式的領域中，能持續學習、精進技術是關鍵，期許將來能夠開發出更優良的作品，為公司帶來價值。
+            </div>
+            <div class="about__border"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My favorite skills</span>
+        <div class="skills__container container grid section__border">
+          <!--==================== SKILLS 1 ====================-->
+          <div class="skills__content">
+            <h3 class="skills__title">
+              <i class="ri-braces-line"></i> 前端開發
+            </h3>
+            <div class="skills__info">
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="./assets/img/html-1.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">HTML</h3>
+                <span class="skills__subtitle">Advanced</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="./assets/img/css-3.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">CSS</h3>
+                <span class="skills__subtitle">Advanced</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob skills__blob-img">
+                  <img src="./assets/img/Sass_1.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">Sass</h3>
+                <span class="skills__subtitle">Advanced</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob skills__blob-img">
+                  <img src="./assets/img/Bootstrap_1.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">Bootstrap</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="./assets/img/logo-javascript.svg"
+                    alt="skills image"
+                  />
+                </div>
+                <h3 class="skills__name">JavaScript</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob skills__blob-img">
+                  <img src="./assets/img/jquery-1.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">jQuery</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="./assets/img/Vue.js_1.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">Vue.js</h3>
+                <span class="skills__subtitle">Basic</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="./assets/img/Quasar_1.png" alt="skills image" />
+                </div>
+                <h3 class="skills__name">Quasar</h3>
+                <span class="skills__subtitle">Basic</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="./assets/img/git-icon.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">Git控版</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+            </div>
+          </div>
+
+          <!--==================== SKILLS 2 ====================-->
+          <div class="skills__content">
+            <h3 class="skills__title">
+              <i class="ri-database-2-line"></i> 後端開發
+            </h3>
+            <div class="skills__info">
+              <div class="skills__data">
+                <div class="skills__blob skills__blob-mongo">
+                  <img src="./assets/img/MongoDB_1.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">MongoDB</h3>
+                <span class="skills__subtitle">Basic</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob skills__blob-img">
+                  <img src="./assets/img/Node.js_1.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">Node.js</h3>
+                <span class="skills__subtitle">Basic</span>
+              </div>
+            </div>
+            <br />
+            <!--==================== SKILLS 3 ====================-->
+            <h3 class="skills__title">
+              <i class="ri-pantone-line"></i> 網頁設計及平面繪圖
+            </h3>
+            <div class="skills__info">
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="./assets/img/figma-1.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">Figma</h3>
+                <span class="skills__subtitle">Advanced</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="./assets/img/adobe-photoshop-2.svg"
+                    alt="skills image"
+                  />
+                </div>
+                <h3 class="skills__name">Photoshop</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="./assets/img/Adobe_Illustrator_1.svg"
+                    alt="skills image"
+                  />
+                </div>
+                <h3 class="skills__name">Illustrator</h3>
+                <span class="skills__subtitle">Advanced</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__content"></div>
+        </div>
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section" id="qualification">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">Experience & education</span>
+        <div class="qualification__container container grid section__border">
+          <!--==================== QUALIFICATION 1 ====================-->
+          <div class="qualification__content">
+            <h3 class="qualification__title">
+              <i class="ri-pencil-ruler-2-line"></i> 學習歷程
+            </h3>
+            <div class="qualification__info">
+              <div>
+                <h3 class="qualification__name">前端網頁開發技術班</h3>
+                <span class="qualification__detail">泰山職訓</span>
+                <span class="qualification__year">Sep 2022 - Mar 2023</span>
+              </div>
+
+              <div>
+                <h3 class="qualification__name">多媒體數位設計學系</h3>
+                <span class="qualification__detail">世新大學</span>
+                <span class="qualification__year">Sep 2016 - Jun 2020</span>
+              </div>
+
+              <div>
+                <h3 class="qualification__name">台北市立大直高中</h3>
+                <span class="qualification__year">Sep 2014 - Jun 2016</span>
+              </div>
+            </div>
+          </div>
+          <!--==================== QUALIFICATION 2 ====================-->
+          <div class="qualification__content">
+            <h3 class="qualification__title">
+              <i class="ri-building-line"></i> 工作經驗
+            </h3>
+            <div class="qualification__info">
+              <div>
+                <h3 class="qualification__name">行銷企劃人員</h3>
+                <span class="qualification__detail"
+                  >啟富達國際股份有限公司</span
+                >
+                <span class="qualification__year">Jul 2020 - Mar 2022</span>
+                <br />
+                <span class="qualification__detail">
+                  ∙ 協助公司新網站建置 <br />
+                  ∙ 提升公司品牌形象、價值 <br />
+                  ∙ 活動宣傳企劃、文案 <br />
+                  ∙ 用戶管理及客服 <br />
+                </span>
+              </div>
+
+              <div>
+                <h3 class="qualification__name">美國樂園打工經驗</h3>
+                <span class="qualification__detail">Worlds of fun</span>
+                <span class="qualification__year">Jun 2019 - Sep 2019</span>
+                <br />
+                <span class="qualification__detail">
+                  ∙ 全英文工作環境 <br />
+                  ∙ 協助遊客園區服務 <br />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="./assets/img/shape-circle.svg"
+          alt="qualification image"
+          class="qualification__img"
+        />
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle"> Most recent work </span>
+
+        <!--==================== PROJECTS usaTravel Project ====================-->
+        <div class="usaTravel__container container grid">
+          <div class="usaTravel__card usaTravel__img">
+            <div class="usaTravel__card-info">
+              <h1 class="projects__title usaTravel__title">美好自遊</h1>
+              <h1 class="projects__subtitle usaTravel__subtitle">
+                美國自由行攻略平台網站，透過地圖和閱覽景點評價功能，讓使用者旅遊時不失去方向感，也能一覽附近美食、景點，此平台有票券商城讓使用者能即刻訂票。
+              </h1>
+              <a
+                href="https://itstinayu.github.io/usaTravel-front-2-/#/"
+                class="projects__button"
+              >
+                View demo
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <!--==================== ACCORDION ====================-->
+          <div class="accordion__container">
+            <div class="accordion__item">
+              <header class="accordion__header">
+                <i class="ri-add-line accordion__icon"></i>
+                <h3 class="accordion__title">『美好自遊』概念發想</h3>
+              </header>
+
+              <div class="accordion__content">
+                <div class="accordion__description">
+                  <div>
+                    多次到美國遊玩的經驗，發現安排多天的行程會遇到以下問題:
+                  </div>
+                  <br />
+                  <ul>
+                    <li>1. 安排行程還需另尋購票渠道的問題</li>
+                    <li>2. 查看景點時需到其他網站搜尋評論、評分</li>
+                    <li>3. 行前注意事項需查閱各類網站文章</li>
+                  </ul>
+                  <br />
+                  <div>
+                    此網站希望可以解決以上問題，將旅客從旅行前後會遇到的問題在此平台中都可解決。
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <header class="accordion__header">
+                <i class="ri-add-line accordion__icon"></i>
+                <h3 class="accordion__title">使用者前台</h3>
+              </header>
+
+              <div class="accordion__content">
+                <div class="accordion__description">
+                  <div>前台功能:</div>
+                  <br />
+                  <ul>
+                    <li>1. 會員註冊/登入</li>
+                    <li>2. Google Map地點自動搜尋</li>
+                    <li>3. TravelAdvisor景點評論網站結合地圖</li>
+                    <li>4. 加入、修改購物車</li>
+                    <li>5. 結帳、送出訂單</li>
+                    <li>6. 行前攻略文章篩選查看、收藏</li>
+                    <li>7. 票券篩選查看、收藏</li>
+                    <li>8. 查看已結帳訂單、票券及文章收藏</li>
+                    <li>9. 會員行事曆功能</li>
+                  </ul>
+                  <br />
+                  <div>前台使用技術:</div>
+                  <br />
+                  <ul>
+                    <li>1. 使用 Quasar 框架開發</li>
+                    <li>2. 以Pinia存取使用者資訊、API回傳資料</li>
+                    <li>3. Vue Router 頁面切換</li>
+                    <li>4. SCSS 預處理器</li>
+                    <li>5. Google Map Platform API</li>
+                    <li>6. axios 套件處理 AJAX</li>
+                    <li>7. validator 信箱驗證</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion__item">
+              <header class="accordion__header">
+                <i class="ri-add-line accordion__icon"></i>
+                <h3 class="accordion__title">管理者後台</h3>
+              </header>
+
+              <div class="accordion__content">
+                <div class="accordion__description">
+                  <div>後台功能:</div>
+                  <br />
+                  <ul>
+                    <li>1. 新增、修改及管理票券、文章</li>
+                    <li>2. 查看會員資料</li>
+                    <li>3. 管理訂單</li>
+                  </ul>
+                  <br />
+                  <div>前後端整合:</div>
+                  <br />
+                  <ul>
+                    <li>1. 使用 Node.js + Express 框架</li>
+                    <li>2. RESTful API 進行請求</li>
+                    <li>3. CORS 處理跨域請求</li>
+                    <li>4. Passport 處理身份驗證</li>
+                    <li>5. bcrypt 處理密碼加鹽</li>
+                    <li>6. MongoDB + Mongoose 套件，建立 Schema</li>
+                    <li>7. Multer 套件處理上傳文件</li>
+                    <li>8. Cloudinary 進行媒體管理</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container section__border">
+          <div class="projects__container swiper">
+            <div class="swiper-wrapper">
+              <!--==================== PROJECTS Vuetify Pomodoro Project ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="./assets/img/project-image/Vuetify Pomodoro Project.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+
+                <div>
+                  <span class="projects__subtitle">
+                    Vuetify Pomodoro Project
+                  </span>
+                  <div class="projects__title-info">
+                    <h1 class="projects__title">
+                      以Vue 3 及 Vuetify UI
+                      框架製作的線上番茄鐘，使用者可增、改、刪、查待辦事項。首頁可進行開始、暫停與跳過倒數等番茄鐘的定時功能。
+                    </h1>
+                  </div>
+                  <a
+                    href="https://github.com/itstinayu/vuetify-pomodoro"
+                    class="projects__button"
+                  >
+                    View demo
+                    <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!--==================== PROJECTS Linebot Giphy Project ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="./assets/img/project-image/Linebot Giphy.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+
+                <div>
+                  <span class="projects__subtitle">Linebot Giphy Project</span>
+                  <div class="projects__title-info">
+                    <h1 class="projects__title">
+                      使用 Node.js 製作查詢開放資料的 LINE 機器人，此項目使用
+                      linebot 、 giphy-api 等套件。
+                    </h1>
+                  </div>
+                  <a
+                    href="https://github.com/itstinayu/linebot-giphy"
+                    class="projects__button"
+                  >
+                    View demo
+                    <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!--==================== PROJECTS Tokyo Responsive Project ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="./assets/img/project-image/Tokyo Responsive Project.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+
+                <div>
+                  <span class="projects__subtitle">
+                    Tokyo Responsive Project
+                  </span>
+                  <div class="projects__title-info">
+                    <h1 class="projects__title">
+                      使用 Bootstrap 結合 skrollr 套件，製作可響應的滾動式網站。
+                    </h1>
+                  </div>
+                  <a
+                    href="https://github.com/itstinayu/Tokyo-Responsive-Project"
+                    class="projects__button"
+                  >
+                    View demo
+                    <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!--==================== PROJECTS Zombie Game Project ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="./assets/img/project-image/Zombie Game Project.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+
+                <div>
+                  <span class="projects__subtitle"> Zombie Game Project </span>
+                  <div class="projects__title-info">
+                    <h1 class="projects__title">
+                      jQuery 的 DOM
+                      操作和動畫的射擊遊戲，加入鍵盤事件可更換遊戲模式，將最高分存入本地儲存庫。
+                    </h1>
+                  </div>
+                  <a
+                    href="https://github.com/itstinayu/Zombie-Game-Project"
+                    class="projects__button"
+                  >
+                    View demo
+                    <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!--==================== PROJECTS Matching Game Project ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="./assets/img/project-image/Matching Game Project.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+
+                <div>
+                  <span class="projects__subtitle">
+                    Toy Story 4 Matching Game Project
+                  </span>
+                  <div class="projects__title-info">
+                    <h1 class="projects__title">
+                      jQuery 以及 CSS 3D
+                      製作玩具總動員主題的翻牌遊戲，加載後開始遊戲，
+                      使用者需在卡牌中翻開所有兩張相同的卡片才算過關。
+                    </h1>
+                  </div>
+                  <a
+                    href="https://github.com/itstinayu/Toy-Story-4-Matching-Game-Project"
+                    class="projects__button"
+                  >
+                    View demo
+                    <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!--==================== PROJECTS Clock Project ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="./assets/img/project-image/Clock Project.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+
+                <div>
+                  <span class="projects__subtitle"> Clock Project </span>
+                  <div class="projects__title-info">
+                    <h1 class="projects__title">
+                      JavaScript DOM 的操作和計時器，使用 setInterval()
+                      函數更新頁面時間，加入點擊事件供使用者更換時鐘時區。
+                    </h1>
+                  </div>
+                  <a
+                    href="https://github.com/itstinayu/Clock-Project"
+                    class="projects__button"
+                  >
+                    View demo
+                    <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!--==================== PROJECTS Calculator Project ====================-->
+              <div class="projects__content swiper-slide">
+                <img
+                  src="./assets/img/project-image/Calculator-light.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+
+                <div>
+                  <span class="projects__subtitle"> Calculator Project </span>
+                  <div class="projects__title-info">
+                    <h1 class="projects__title">
+                      對滑鼠、鍵盤偵測事件，對每個按鈕設置點擊和鍵盤事件，並使用
+                      eval() 函數去計算，加上深淺色主題供使用者更換。
+                    </h1>
+                  </div>
+                  <a
+                    href="https://github.com/itstinayu/Calculator-Project"
+                    class="projects__button"
+                  >
+                    View demo
+                    <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- swiper arrows -->
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-left-s-line"></i>
+            </div>
+
+            <!-- swiper-pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">
+          如有任何疑問歡迎隨時聯繫我， 我將盡快回覆！
+        </span>
+        <div class="contact__container container grid section__border">
+          <div class="contact__content">
+            <h3 class="contact__title">
+              <i class="ri-chat-3-line"></i>
+              聯繫方式
+            </h3>
+
+            <div class="contact__info">
+              <div class="contact__data">
+                <span class="contact__data-title">Email</span>
+                <span class="contact__data-info">trista10235195@email.com</span>
+              </div>
+
+              <div class="contact__data">
+                <span class="contact__data-title">Phone</span>
+                <span class="contact__data-info">0903100092</span>
+              </div>
+
+              <div class="contact__data">
+                <span class="contact__data-title">CakeResume</span>
+                <span class="contact__data-info">@tina77878</span>
+                <a
+                  href="https://www.cakeresume.com/me/tina77878"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write me <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__content">
+            <h3 class="contact__title">
+              <i class="ri-send-plane-line"></i> 歡迎直接寫信和我聯繫！
+            </h3>
+
+            <form action="" class="contact__form" id="contact-form">
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Name</label>
+                <input
+                  type="text"
+                  name="user_name"
+                  required
+                  placeholder="Write your name"
+                  class="contact__form-input"
+                  id="contact-name"
+                />
+              </div>
+
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Mail</label>
+                <input
+                  type="text"
+                  name="user_email"
+                  required
+                  placeholder="Write your email"
+                  class="contact__form-input"
+                  id="contact-email"
+                />
+              </div>
+
+              <div class="contact__form-div contact__form-area">
+                <label class="contact__form-tag">Message</label>
+                <textarea
+                  name="user_project"
+                  id="contact-project"
+                  class="contact__project contact__form-input"
+                  placeholder="Write message"
+                ></textarea>
+              </div>
+
+              <p class="contact__message" id="contact-message"></p>
+
+              <button type="submit" class="contact__button">
+                submit
+                <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Tina</h1>
+        <p>Frontend Developer</p>
+
+        <ul class="footer__list">
+          <li>
+            <a href="#home" class="footer__link">Home</a>
+          </li>
+          <li>
+            <a href="#skills" class="footer__link">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="footer__link">Projects</a>
+          </li>
+        </ul>
+
+        <ul class="footer__social">
+          <a
+            href="https://www.cakeresume.com/me/tina77878"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="ri-copyright-line"></i>
+          </a>
+          <a
+            href="https://github.com/itstinayu"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="ri-github-line"></i>
+          </a>
+        </ul>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
