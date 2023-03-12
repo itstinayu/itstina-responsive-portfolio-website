@@ -231,7 +231,7 @@ sr.reveal(
 );
 sr.reveal(`.home__info div`, { delay: 600, origin: "bottom", interval: 100 });
 sr.reveal(
-  `.skills__content:nth-child(1), .contact__content:nth-child(1), .usaTravel__card`,
+  `.skills__content:nth-child(odd), .contact__content:nth-child(1), .usaTravel__card`,
   {
     origin: "left",
   }

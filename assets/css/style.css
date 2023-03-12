@@ -15,6 +15,7 @@
   --container-color: hsl(207, 4%, 95%);
   --container-color-gradient: linear-gradient(
     hsl(207 4% 95%/ 0),
+    hsl(0 0% 100%/ 1) 60%,
     hsl(0 0% 100%/ 1)
   );
 
@@ -639,7 +640,9 @@ body.dark-theme {
 .usaTravel__container {
   overflow: initial;
 }
-
+.projects__container {
+  justify-content: center;
+}
 .usaTravel__container {
   margin-bottom: 3rem;
 }
@@ -792,13 +795,13 @@ body.dark-theme {
 }
 
 .projects__img {
-  width: 250px;
+  width: 100%;
   border-radius: 0.75rem;
   margin-bottom: 1.25rem;
 }
 
 .projects__subtitle {
-  font-size: var(--small-font-size);
+  font-size: var(--h2-font-size);
   color: var(--text-color-light);
 }
 
@@ -806,14 +809,23 @@ body.dark-theme {
   font-size: var(--normal-font-size);
   color: var(--text-color);
 }
+
+.projects__card {
+  background-color: var(--container-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: background 0.4s;
+  position: relative;
+}
+
 .projects__title-info {
   width: 250px;
 }
 
 .projects__title {
-  font-size: var(--h2-font-size);
+  font-size: var(--normal-font-size);
   margin-bottom: 1.25rem;
-  margin: 0.5rem 0 1.25rem;
+  margin: 0.5rem 0 3rem;
 }
 
 .projects__button {
@@ -832,52 +844,11 @@ body.dark-theme {
   transform: translate(0.25rem);
 }
 
-/* Swiper class */
-.projects__container .swiper-button-prev::after,
-.projects__container .swiper-button-next::after {
-  content: "";
-}
-
-.projects__container .swiper-button-prev,
-.projects__container .swiper-button-next {
-  width: initial;
-  height: initial;
-  margin: initial;
-  font-size: 2.5rem;
-  color: var(--title-color);
-}
-
-.projects__container .swiper-button-prev {
-  left: -1rem;
-  top: 4.5rem;
-}
-
-.projects__container .swiper-button-next {
-  right: -1rem;
-  top: 4.5rem;
-}
-
-.projects__container .swiper-slide {
-  margin-bottom: 4.5rem;
-}
-
-.projects__container .swiper-pagination-bullets {
-  bottom: 0;
-}
-
-.projects__container .swiper-pagination-bullet {
-  background-color: var(--text-color-light);
-  opacity: initial;
-}
-
-.projects__container .swiper-pagination-bullet-active {
-  background-color: var(--text-color);
-}
-
 /*=============== CONTACT ===============*/
 
 .contact__container,
 .usaTravel__container,
+.projects__container,
 .about__container {
   row-gap: 3.5rem;
 }
@@ -1123,7 +1094,7 @@ body.dark-theme {
     grid-template-columns: repeat(2, 1fr);
   }
   .projects__img {
-    width: 200px;
+    width: 100%;
     justify-content: center;
   }
 }
@@ -1141,16 +1112,8 @@ body.dark-theme {
     justify-content: center;
   }
   .projects__container {
-    width: 400px;
-  }
-  .projects__container {
-    overflow: hidden;
-  }
-  .projects__container .swiper-button-prev {
-    left: 1rem;
-  }
-  .projects__container .swiper-button-next {
-    right: 1rem;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
   }
   .accordion__container {
     width: 550px;
@@ -1188,8 +1151,13 @@ body.dark-theme {
   .qualification__container,
   .about__container,
   .contact__container,
-  .usaTravel__container {
+  .usaTravel__container,
+  .projects__container {
     grid-template-columns: repeat(2, max-content);
+  }
+  .projects__container {
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
   }
   .skills__container {
     grid-template-columns: (1fr 1fr 3fr);
@@ -1201,9 +1169,6 @@ body.dark-theme {
   .qualification__container {
     justify-content: center;
     column-gap: 10rem;
-  }
-  .projects__container {
-    width: 500px;
   }
   .contact__form {
     width: 306px;
@@ -1398,31 +1363,12 @@ body.dark-theme {
     height: 540px;
     border-radius: 8.25rem;
   }
-  .projects__container {
-    width: 900px;
-  }
+
   .usaTravel__container {
     grid-template-columns: repeat(3, max-content);
   }
   .usaTravel__img {
-    margin: 0 5rem 1.25rem 8rem;
     width: 450px;
-  }
-  .accordion__container {
-    padding-right: 2rem;
-  }
-  .projects__container .swiper-button-prev,
-  .projects__container .swiper-button-next {
-    font-size: 3rem;
-  }
-  .projects__container .swiper-button-prev {
-    left: -1rem;
-  }
-  .projects__container .swiper-button-next {
-    right: -1rem;
-  }
-  .projects__container .swiper-slide {
-    margin-bottom: 6.5rem;
   }
   .projects__img {
     width: 320px;
