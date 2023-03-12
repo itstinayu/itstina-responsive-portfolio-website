@@ -554,7 +554,6 @@ body.dark-theme {
 
 /*=============== about ===============*/
 .about__container {
-  row-gap: 2.5rem;
   justify-content: center;
 }
 
@@ -571,10 +570,10 @@ body.dark-theme {
   transition: background 0.4s; /* for dark mode animation */
 }
 
-.about__card:nth-child(2) {
+.about__card {
   position: relative;
-  width: 450px;
-  height: 560px;
+  width: 330px;
+  height: 730px;
   background-color: var(--container-color);
   text-align: center;
   padding: 2.5rem 1rem;
@@ -615,8 +614,8 @@ body.dark-theme {
 }
 
 .about__border {
-  width: 470px;
-  height: 580px;
+  width: 350px;
+  height: 750px;
   border: 1px solid var(--text-color-light);
   border-radius: 7.75rem;
   position: absolute;
@@ -646,7 +645,8 @@ body.dark-theme {
 }
 
 .usaTravel__img {
-  width: 450px;
+  width: 360px;
+  height: 280px;
   border-radius: 0.75rem;
   justify-self: center;
   display: grid;
@@ -877,7 +877,8 @@ body.dark-theme {
 /*=============== CONTACT ===============*/
 
 .contact__container,
-.usaTravel__container {
+.usaTravel__container,
+.about__container {
   row-gap: 3.5rem;
 }
 
@@ -1184,13 +1185,15 @@ body.dark-theme {
   .home__info-description {
     padding-right: 0;
   }
-  .skills__container,
   .qualification__container,
   .about__container,
-  .contact__container {
+  .contact__container,
+  .usaTravel__container {
     grid-template-columns: repeat(2, max-content);
   }
-
+  .skills__container {
+    grid-template-columns: (1fr 1fr 3fr);
+  }
   .skills__container,
   .about__container {
     column-gap: 5rem;
@@ -1347,10 +1350,11 @@ body.dark-theme {
     font-size: var(--normal-font-size);
   }
   .skills__info {
+    grid-template-columns: repeat(6, 1fr);
     gap: 3rem;
   }
   .skills__info:nth-child(2) {
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
   }
   .qualification__container {
     column-gap: 14rem;
@@ -1379,7 +1383,7 @@ body.dark-theme {
     width: 780px;
     height: 520px;
     border-radius: 7.6rem;
-    padding: 3.5rem 1.5rem;
+    padding: 1rem 2.5rem;
   }
   .about__card i {
     font-size: 2.5rem;
@@ -1402,7 +1406,7 @@ body.dark-theme {
   }
   .usaTravel__img {
     margin: 0 5rem 1.25rem 8rem;
-    height: 250px;
+    width: 450px;
   }
   .accordion__container {
     padding-right: 2rem;
