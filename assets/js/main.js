@@ -4,7 +4,6 @@ const navToggle = document.getElementById("nav-toggle");
 const navClose = document.getElementById("nav-close");
 
 /*===== MENU SHOW =====*/
-/* Validate if constant exists */
 if (navToggle) {
   navToggle.addEventListener("click", () => {
     navMenu.classList.add("show-menu");
@@ -12,7 +11,6 @@ if (navToggle) {
 }
 
 /*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
 if (navClose) {
   navClose.addEventListener("click", () => {
     navMenu.classList.remove("show-menu");
@@ -24,7 +22,6 @@ const navLink = document.querySelectorAll(".nav__link");
 
 const linkAction = () => {
   const navMenu = document.getElementById("nav-menu");
-  // When we click on each nav__link, we remove the show-menu class
   navMenu.classList.remove("show-menu");
 };
 navLink.forEach((n) => n.addEventListener("click", linkAction));
@@ -86,10 +83,10 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 
 /*=============== EMAIL JS ===============*/
 const contactForm = document.getElementById("contact-form"),
-  contactName = document.getElementById("contact-name");
-contactEmail = document.getElementById("contact-email");
-contactProject = document.getElementById("contact-project");
-contactMessage = document.getElementById("contact-message");
+  contactName = document.getElementById("contact-name"),
+  contactEmail = document.getElementById("contact-email"),
+  contactProject = document.getElementById("contact-project"),
+  contactMessage = document.getElementById("contact-message");
 
 const sendEmail = (e) => {
   e.preventDefault();
